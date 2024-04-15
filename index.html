@@ -17,21 +17,24 @@
     <script>
         function toggleNav() {
             document.getElementById("navMobile").classList.toggle("open");
+            document.getElementById("body").classList.toggle("no-scroll");
         }
 
         function toogleSearch() {
             document.getElementById("searchPanel").classList.toggle("open");
+            document.getElementById("body").classList.toggle("no-scroll");
         }
 
         function toogleSiteMap() {
             document.getElementById("siteMapPanel").classList.toggle("open");
+            document.getElementById("body").classList.toggle("no-scroll");
         }
     </script>
 
     <title>MZ - Test</title>
 </head>
 
-<body>
+<body id="body">
 
     <header class="main-header max-width-container">
         <img src="img/logo.png" alt="Logo Positron" class="logo">

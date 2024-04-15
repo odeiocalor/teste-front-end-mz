@@ -33,6 +33,10 @@ body {
     background-color: rgb(var(--color-background));
     font-family: var(--font-default);
     color: rgb(var(--color-text));
+
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 
 a {

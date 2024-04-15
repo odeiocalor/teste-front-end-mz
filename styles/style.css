@@ -23,6 +23,9 @@ body {
   font-family: var(--font-default);
   color: rgb(var(--color-text));
 }
+body.no-scroll {
+  overflow: hidden;
+}
 
 a {
   color: rgb(var(--color-text));
