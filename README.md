@@ -14,3 +14,10 @@ Link da página para teste: https://teste-mz-carlos.netlify.app/
 - Eu optei pela criação da página utilizando tecnologias mais básicas, sem o uso de frameworks, para manter o teste o mais simples e "menor" possível. Adicionei apenas o SASS por ser um tecnolgia ainda simples e que constava na lista de conhecimentos necessários para a vaga.
 - O protótipo conta com diversos elementos similares porém com algumas divergências em detalhes, como *cards* que normalmente seriam idênticos com *paddings* diferentes em cada um, sessões com *padding-top* e *padding-bottom* diferentes e outras coisas do tipo. No geral eu prezei por reproduzir o protótipo seguindo esse tipo de detalhes, apesar de que em um cenário real o ideal seria a padronização dessas propriedades.
 - Apesar de haver modos para criar "componentes" em um projeto como esse, como o uso da tag *template*, optei por manter a página mais simples, criando apenas estilos génericos de componentes e replicando os elementos sempre que necessário.
+
+# Instruções para o uso do SASS
+
+- Instalar o SASS seguindo as instruções na documentação: https://sass-lang.com/install/
+- Navegar no terminal até a pasta do projeto e utilizar o seguinte comando: sass --watch styles/style.scss styles/style.css
+
+Isso garantirá que a cada vez que o usuário salve o arquivo *.scss* as alterações sejam automáticamente processadas para o arquivo *.css*.
