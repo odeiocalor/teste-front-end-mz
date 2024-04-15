@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script>
+        function toggleNav() {
+            document.getElementById("navMobile").classList.toggle("open");
+        }
+
+        function toogleSearch() {
+            document.getElementById("searchPanel").classList.toggle("open");
+        }
+
+        function toogleSiteMap() {
+            document.getElementById("siteMapPanel").classList.toggle("open");
+        }
+    </script>
+
+    <title>MZ - Test</title>
+</head>
+
+<body>
+
+    <header class="main-header max-width-container">
+        <img src="img/logo.png" alt="Logo Positron" class="logo">
+        <div class="header-options">
+            <nav class="nav-desktop">
+                <div class="nav-item">
+                    <span class="nav-item-text" href="#">Who we are</span>
+                    <ul class="dropdown">
+                        <li><a class="dropdown-item" href="#">Submenu</a></li>
+                        <li><a class="dropdown-item" href="#">Submenu</a></li>
+                        <li><a class="dropdown-item" href="#">Submenu</a></li>
+                        <li><a class="dropdown-item" href="#">Submenu</a></li>
+                        <li><a class="dropdown-item" href="#">Submenu</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="nav-item">
+                    <span class="nav-item-text">Our Team</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-item-text">Portfolio</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-item-text">Contact us</span>
+                </a>
+            </nav>
+            <!-- Mobile Navigation - only visible on mobile until breakpoint-lg-->
+            <nav id="navMobile" class="side-panel nav-mobile panel-side-left">
+                <div class="content">
+                    <div class="header">
+                        <button class="close-button" onclick="toggleNav()">
+                            <img src="img/icons/close.svg" alt="Close" class="icon">
+                        </button>
+                    </div>
+                    <div class="nav-item">
+                        <span class="nav-item-text" href="#">Who we are</span>
+                        <ul class="submenu">
+                            <li class="submenu-item">
+                                <a href="#">Submenu</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="#">Submenu</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="#">Submenu</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="#">Submenu</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="#">Submenu</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-item-text" href="#">Our Team</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-item-text" href="#">Portfolio</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-item-text" href="#">Contact us</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="extra-options">
+                <div class="language-selector">
+                    <span class="selected-language">EN</span>
+                    <ul class="dropdown">
+                        <li class="dropdown-item language-option">PT-BR</li>
+                        <li class="dropdown-item language-option">ES</li>
+                    </ul>
+                </div>
+                <button class="search-button" onclick="toogleSearch()">
+                    <img src="img/icons/search.svg" alt="Button that opens the search panel">
+                </button>
+                <div id="searchPanel" class="side-panel panel-side-right search-panel">
+                    <div class="content">
+                        <div class="header">
+                            <button class="close-button" onclick="toogleSearch()">
+                                <img src="img/icons/close.svg" alt="Close" class="icon">
+                            </button>
+                        </div>
+                        <input type="text" placeholder="Search" class="text-input search-input">
+                    </div>
+                </div>
+                <!-- Button that opens the mobile navigation -->
+                <button class="icon-button mobile-nav-button" onclick="toggleNav()">
+                    <img src="img/icons/menu.svg" alt="Button that opens the navigation" class="icon">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="max-width-container content">
+                <h1 class="title">Morbi leo mi, nonummy eget,</h1>
+                <p class="text">
+                    orbi leo mi, nonummy eget, tristique non, rhoncus non, leo. Nullam faucibus mi quis velit. Integer
+                    in sapien. Fusce tellus odio, dapibus id
+                </p>
+            </div>
+        </section>
+
+        <section class="info max-width-container">
+            <div class="card info-card results-center-card">
+                <header class="header">
+                    <h2 class="title">RESULTS CENTER</h2>
+                    <button class="icon-button">
+                        <img src="img/icons/plus.svg" alt="See more" class="icon">
+                    </button>
+                </header>
+                <div class="content">
+                    <div class="selector">
+                        <button class="selector-button">
+                            <img src="img/icons/chevron-up.svg" alt="Select up">
+                        </button>
+                        <div class="selector-text">2T19</div>
+                        <button class="selector-button">
+                            <img src="img/icons/chevron-down.svg" alt="Select down">
+                        </button>
+                    </div>
+                    <ul class="list">
+                        <li class="item">Morbi leo mi, nonummy eget</li>
+                        <li class="item">Morbi leo mi, nonummy eget</li>
+                        <li class="item">Morbi leo mi, nonummy eget</li>
+                        <li class="item">Morbi leo mi, nonummy eget</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card info-card news-card">
+                <header class="header">
+                    <h2 class="title">NEWS</h2>
+                    <button class="icon-button">
+                        <img src="img/icons/plus.svg" alt="See more" class="icon">
+                    </button>
+                </header>
+                <div class="content">
+                    <ul class="list">
+                        <li class="item">
+                            <div class="date">
+                                <span class="day">30</span>
+                                <span class="month">may</span>
+                            </div>
+                            <span class="text">Nullam faucibus mi quis velit.</span>
+                        </li>
+                        <li class="item">
+                            <div class="date">
+                                <span class="day">30</span>
+                                <span class="month">may</span>
+                            </div>
+                            <span class="text">Nullam faucibus mi quis velit.</span>
+                        </li>
+                        <li class="item">
+                            <div class="date">
+                                <span class="day">30</span>
+                                <span class="month">may</span>
+                            </div>
+                            <span class="text">Nullam faucibus mi quis velit.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card info-card events-card">
+                <header class="header">
+                    <h2 class="title">NEXT EVENTS</h2>
+                    <button class="icon-button">
+                        <img src="img/icons/plus.svg" alt="See more" class="icon">
+                    </button>
+                </header>
+                <div class="content">
+                    <ul class="list">
+                        <li class="item">
+                            <span class="text">Fusce tellus odio, dapibus id, fermentum quis</span>
+                            <span class="date">03/10</span>
+                        </li>
+                        <li class="item">
+                            <span class="text">Fusce tellus odio, dapibus id, fermentum quis</span>
+                            <span class="date">03/10</span>
+                        </li>
+                        <li class="item">
+                            <span class="text">Fusce tellus odio, dapibus id, fermentum quis</span>
+                            <span class="date">03/10</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-access">
+            <div class="max-width-container content">
+                <h2 class="title">QUICK ACCESS</h2>
+                <ul class="list">
+                    <li class="item">
+                        <div class="icon-container">
+                            <img src="img/icons/presentation.svg" alt="Presentation icon" class="icon">
+                        </div>
+                        <span class="label">Presentation</span>
+                    </li>
+                    <li class="item">
+                        <div class="icon-container">
+                            <img src="img/icons/graph.svg" alt="Graphs icon" class="icon">
+                        </div>
+                        <span class="label">Graphs</span>
+                    </li>
+                    <li class="item">
+                        <div class="icon-container">
+                            <img src="img/icons/report.svg" alt="Reports icon" class="icon">
+                        </div>
+                        <span class="label">Reports</span>
+                    </li>
+                    <li class="item">
+                        <div class="icon-container">
+                            <img src="img/icons/archive.svg" alt="Archives icon" class="icon">
+                        </div>
+                        <span class="label">Archives</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact max-width-container">
+            <div class="card contact-us-card">
+                <h2 class="title">CONTACT US</h2>
+                <p class="text">Morbi leo mi, nonummy eget, tristique non, rhoncus non, leo. Nullam faucibus mi quis
+                    velit</p>
+                <button class="button primary">
+                    Contact us
+                </button>
+            </div>
+            <div class="card mailing-list-card">
+                <h2 class="title">MAILING LIST</h2>
+                <form action="" class="form">
+                    <div class="inputs">
+                        <input class="text-input" type="text" placeholder="Name">
+                        <input class="text-input" type="text" placeholder="Email">
+                    </div>
+                    <button type="submit" class="button primary">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="max-width-container footer-content">
+            <nav class="nav-footer">
+                <ul class="links">
+                    <li>
+                        <a href="#" class="link">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">Annual Reports</a>
+                    </li>
+                    <li>
+                        <span class="link" onclick="toogleSiteMap()">Site Map</span>
+                    </li>
+                    <div id="siteMapPanel" class="side-panel panel-side-bottom site-map-panel">
+                        <div class="max-width-container content">
+                            <div class="header">
+                                <h2 class="title">Site Map</h2>
+                                <button class="close-button" onclick="toogleSiteMap()">
+                                    <img src="img/icons/close.svg" alt="Close" class="icon">
+                                </button>
+                            </div>
+                            <ul class="list">
+                                <li class="item">
+                                    <span class="text">Who we are</span>
+                                    <ul class="sub-list">
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="item">
+                                    <span class="text">Our Team</span>
+                                    <ul class="sub-list">
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="item">
+                                    <span class="text">Portfolio</span>
+                                    <ul class="sub-list">
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="item">
+                                    <span class="text">Contact us</span>
+                                    <ul class="sub-list">
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                        </div>
+                    </div>
+                </ul>
+                <div class="social-links">
+                    <a href="#">
+                        <img src="img/icons/facebook.svg" alt="Facebook link">
+                    </a>
+                    <a href="#">
+                        <img src="img/icons/twitter.svg" alt="Twitter link">
+                    </a>
+                    <a href="#">
+                        <img src="img/icons/linkedin.svg" alt="LinkedIn link">
+                    </a>
+                </div>
+            </nav>
+            <p class="copyright-text">Positron - Copyright 2019</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
