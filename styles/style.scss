@@ -799,77 +799,77 @@ a {
                     width: max-content;
                     cursor: pointer;
                 }
+            }
 
-                .site-map-panel {
-                    padding-top: 1.938rem;
+            .site-map-panel {
+                padding-top: 1.938rem;
 
-                    @media screen and (min-width: $breakpoint-xs) {
-                        padding-bottom: 7.813rem;
-                    }
+                @media screen and (min-width: $breakpoint-xs) {
+                    padding-bottom: 7.813rem;
+                }
 
-                    .content {
-                        gap: 1.875rem;
+                .content {
+                    gap: 1.875rem;
 
-                        .header {
-                            position: relative;
-                            justify-content: center;
-                            align-items: center;
+                    .header {
+                        position: relative;
+                        justify-content: center;
+                        align-items: center;
 
-                            .title {
-                                font-size: 1.813rem;
-                                line-height: 2.124rem;
-                                letter-spacing: 0.063rem;
-                            }
-
-                            .close-button {
-                                position: absolute;
-                                right: 0;
-
-                                .icon {
-                                    width: 1.5rem;
-                                    height: 1.5rem;
-                                }
-                            }
+                        .title {
+                            font-size: 1.813rem;
+                            line-height: 2.124rem;
+                            letter-spacing: 0.063rem;
                         }
 
-                        .list {
-                            display: grid;
-                            grid-template-columns: repeat(1, 1fr);
-                            gap: 1rem;
+                        .close-button {
+                            position: absolute;
+                            right: 0;
 
-                            @media screen and (min-width: $breakpoint-xs) {
-                                grid-template-columns: repeat(2, 1fr);
+                            .icon {
+                                width: 1.5rem;
+                                height: 1.5rem;
+                            }
+                        }
+                    }
+
+                    .list {
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                        gap: 1rem;
+
+                        @media screen and (min-width: $breakpoint-xs) {
+                            grid-template-columns: repeat(2, 1fr);
+                        }
+
+                        @media screen and (min-width: $breakpoint-md) {
+                            grid-template-columns: repeat(4, 1fr);
+                        }
+
+                        .item {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1.063rem;
+                            text-align: center;
+
+                            .text {
+                                font-size: 1.25rem;
+                                font-weight: 700;
+                                line-height: 1.465rem;
                             }
 
-                            @media screen and (min-width: $breakpoint-md) {
-                                grid-template-columns: repeat(4, 1fr);
-                            }
-
-                            .item {
+                            .sub-list {
                                 display: flex;
                                 flex-direction: column;
-                                gap: 1.063rem;
-                                text-align: center;
+                                gap: 0.5rem;
 
-                                .text {
-                                    font-size: 1.25rem;
-                                    font-weight: 700;
-                                    line-height: 1.465rem;
+                                .sub-item {
+                                    font-size: 1.063rem;
+                                    line-height: 1.245rem;
+                                    letter-spacing: 0.063rem;
                                 }
-
-                                .sub-list {
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 0.5rem;
-
-                                    .sub-item {
-                                        font-size: 1.063rem;
-                                        line-height: 1.245rem;
-                                        letter-spacing: 0.063rem;
-                                    }
-                                }
-
                             }
+
                         }
                     }
                 }
