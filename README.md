@@ -1,4 +1,4 @@
-Em desenvolvimento - Pendente painéis laterais (navegação mobile, painel de busca e *site map*).
+Em desenvolvimento
 
 Teste para vaga de Desenvolvedor Front-End JR que consiste em reproduzir uma página estática se baseando em um protótipo fornecido pela empresa.
 
